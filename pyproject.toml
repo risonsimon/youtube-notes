@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "youtube-notes"
+version = "0.1.0"
+description = "Convert youtube videos into notes"
+authors = ["Rison Simon <>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "youtube_notes"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+yt-dlp = "^2024.8.6"
+litellm = "^1.44.14"
+python-dotenv = "^1.0.1"
+markdown2 = "^2.5.0"
+pdfkit = "^1.0.0"
+pyperclip = "^1.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
