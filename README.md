@@ -96,6 +96,15 @@ Poetry is a modern dependency management and packaging tool for Python projects.
    poetry install
    ```
 
+## Getting Gemini API Key
+
+To use the AI features of this script, you need a Gemini API key. Follow these steps to obtain your API key:
+
+1. Visit [Google AI Studio](https://aistudio.google.com/app/apikey).
+2. Sign in with your Google account.
+3. Follow the instructions to generate a new API key.
+4. Copy the generated API key for use in the script.
+
 ## Usage
 
 1. Activate your virtual environment (if using pip) or run `poetry shell` (if using Poetry).
