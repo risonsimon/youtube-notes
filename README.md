@@ -1,12 +1,12 @@
 # YouTube Notes Generator
 
-This Python script generates notes from YouTube video transcripts using AI. It fetches the transcript, generates summarized notes, and saves them in both text and PDF formats.
+This Python script generates notes from YouTube video transcripts using AI. It fetches the transcript, generates summarized notes, and saves them in both markdown and PDF formats.
 
 ## Features
 
 - Fetch transcripts from YouTube videos
 - Generate summarized notes using AI (Gemini)
-- Save notes in text and PDF formats
+- Save notes in markdown and PDF formats
 - Copy notes to clipboard (optional)
 
 ## Prerequisites
@@ -31,6 +31,7 @@ You can install this project using either pip or Poetry.
 ### Installing ffmpeg and wkhtmltopdf
 
 1. Install ffmpeg:
+
    - On macOS (using Homebrew): `brew install ffmpeg`
    - On Ubuntu/Debian: `sudo apt-get install ffmpeg`
    - On Windows: Download from https://ffmpeg.org/download.html and add to PATH
@@ -43,12 +44,14 @@ You can install this project using either pip or Poetry.
 ### Using pip
 
 1. Clone the repository:
+
    ```
    git clone https://github.com/risonsimon/youtube-notes.git
    cd youtube-notes
    ```
 
 2. Create a virtual environment:
+
    ```
    python -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
@@ -64,22 +67,26 @@ You can install this project using either pip or Poetry.
 Poetry is a modern dependency management and packaging tool for Python projects.
 
 1. Clone the repository:
+
    ```
    git clone https://github.com/risonsimon/youtube-notes.git
    cd youtube-notes
    ```
 
 2. Install Poetry if you haven't already:
+
    ```
    curl -sSL https://install.python-poetry.org | python3 -
    ```
 
 3. Initialize a new Poetry project:
+
    ```
    poetry init
    ```
 
 4. Add the required dependencies:
+
    ```
    poetry add yt-dlp litellm python-dotenv markdown2 pdfkit pyperclip
    ```
@@ -94,6 +101,7 @@ Poetry is a modern dependency management and packaging tool for Python projects.
 1. Activate your virtual environment (if using pip) or run `poetry shell` (if using Poetry).
 
 2. Run the script with the following command:
+
    ```
    python youtube-notes/index.py <YouTube_URL> --gemini-api-key <YOUR_GEMINI_API_KEY> [--copy-to-clipboard]
    ```
