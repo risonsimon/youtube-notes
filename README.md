@@ -2,6 +2,8 @@
 
 This Python script generates notes from YouTube video transcripts using AI. It fetches the transcript, generates summarized notes, and saves them in both markdown and PDF formats.
 
+> Made by [Rison Simon](https://risonsimon.com). Need a custom AI workflow or small app like this for your company, or want your team trained to ship with coding agents in-house? [Work with me →](https://risonsimon.com/work-with-me)
+
 ## Features
 
 - Fetch transcripts from YouTube videos
@@ -132,7 +134,3 @@ GEMINI_API_KEY=your_gemini_api_key_here
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Made by [Rison Simon](https://risonsimon.com). Need a custom AI workflow or small app like this for your company, or want your team trained to ship with coding agents in-house? [Work with me →](https://risonsimon.com/work-with-me)
